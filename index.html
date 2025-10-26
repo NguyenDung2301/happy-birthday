@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ê Biết Nay Ngày Gì Không ??</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<button id="mode-toggle" title="Chuyển đổi chế độ sáng/tối">🌙</button>
+<button id="music-btn" title="Phát/tạm dừng nhạc nền">🔇</button>
+
+<div class="container">
+  <h1>Ê Biết Nay Ngày Gì Hông ???</h1>
+  <img src="https://i.pinimg.com/736x/79/81/88/79818873e3d488ba818c8aaad7ff470c.jpg" alt="Avatar" class="avatar" />
+
+  <h1>Cho bà 3s để mở ra coi đó 😤</h1>
+
+  <div>
+    <button class="btn" id="open-gift-btn" aria-haspopup="dialog" aria-controls="popup" aria-expanded="false">Đồng ý coi</button>
+    <button class="btn" id="exit-btn" aria-haspopup="dialog">Hông coi</button>
+  </div>
+</div>
+
+<div class="popup" id="exit-popup" role="alertdialog" aria-modal="true">
+  <center><img src="https://i.pinimg.com/736x/32/a5/4d/32a54dc49f2dbd53374f67b025a3d6c4.jpg" alt="Xin lỗi mà"/></center>
+  <h2>Ê giỡn á 😢</h2>
+  <p>Bấm mở coi đi mà, năn nỉ á 🥺</p>
+  <button class="close-btn" id="close-exit-btn">Ok nè😁</button>
+</div>
+
+<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title" aria-describedby="popup-desc">
+  <center><img src="https://i.pinimg.com/736x/0d/5b/f3/0d5bf3ef087a77846742fa96fa300f07.jpg" alt="Quà sinh nhật" /></center>
+  <h2 id="popup-title">Bất ngờ chưa!</h2>
+  <div id="typing-text" aria-live="polite" aria-atomic="true"></div>
+  <button class="close-btn" id="close-popup-btn">Đóng</button>
+</div>
+<canvas id="fireworks"></canvas>
+
+<audio id="bg-music" autoplay loop>
+  <source src="./style/HPBD.mp3" type="audio/mpeg" />
+</audio>
+
+<div class="popup" id="guess-age-popup">
+  <center><img src="https://i.pinimg.com/736x/aa/3a/dd/aa3add4a9fcb132c14ac9c6ede3baf7e.jpg" alt="Guess age" style="width: 120px;"/></center>
+  <h2>Khai tuổi thật đi 🤨</h2>
+  <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+    <button class="btn age-btn" data-age="19">19 tuổi</button>
+    <button class="btn age-btn" data-age="20">20 tuổi</button>
+    <button class="btn age-btn" data-age="21">21 tuổi</button>
+  </div>
+</div>
+<script src="./style/script.js"></script>
+</body>
+</html>
